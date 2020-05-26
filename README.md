@@ -12,13 +12,18 @@
  7.joda-time-2.10.6.jar
  8.IAMApprovalService.jar
  
- IAMApprovalService.zip- 
+ #IAMApprovalService.zip- 
  >It is WS client to invoke isim extension ws
  Dependent on jar itim_ws_client.jar, itim_ws_model.jar
  
- HandleIAMApprovals.zip - 
+ #HandleIAMApprovals.zip - 
  >This is extension webservice.This needs to be registered in isim/data/wsextension.properties file.
  >jar of this project needs to copy in isim/lib and ITIM.ear folder and also needs to be added in ISIM WAS classpath
  
+ #Make sure your ISIM include processID as well as activity name in the email so that can be used to while approving/rejecting. As EmailLookupService will read processid and activity name to process the request.
  
+ #Approve or reject link in the email
+ generate below tag in your IAM approvals to create approve or reject link
+ <a href=" mailto:<iamadmin>@xx.xx?Subject=  Approved|1223234432423423|ManagerWithNoEscalation" target="_top">Approve </a>
+ <a href=" mailto:<iamadmin>@xx.xx?Subject=  Rejected|1223234432423423|ManagerWithNoEscalation" target="_top">Reject </a>
  
