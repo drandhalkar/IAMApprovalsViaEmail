@@ -22,8 +22,8 @@
  
  #Make sure your ISIM include processID as well as activity name in the email so that can be used to while approving/rejecting. As EmailLookupService will read processid and activity name to process the request.
  
- #Approve or reject link in the email
- generate below tag in your IAM approvals to create approve or reject link
+ #Approve or reject link in the email -
+ >Generate below tag in your IAM approvals to create approve or reject link
  <a href=" mailto:<iamadmin>@xx.xx?Subject=  Approved|1223234432423423|ManagerWithNoEscalation" target="_top">Approve </a>
  <a href=" mailto:<iamadmin>@xx.xx?Subject=  Rejected|1223234432423423|ManagerWithNoEscalation" target="_top">Reject </a>
  
